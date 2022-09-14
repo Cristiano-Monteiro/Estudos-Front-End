@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Images Slider Show</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: rgb(56, 56, 56);
+        }
+
+        .container{
+            width: 100%;
+            max-width: 600px;
+            height: 400px;
+            border-radius: 20px;
+            background-color: blue;
+            animation: slide 5s infinite;
+        }
+
+        @keyframes slide{
+            25%{background-color: yellow;}
+            50%{background-color: red;}
+            75%{background-color: green;}
+            100%{background-color: blue;}
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        
+    </div>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS filter Property</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        img{
+            width: 30%;
+            
+        }
+
+        .blur{
+            filter: blur(3px);
+        }
+
+        .brightness{
+            filter: brightness(30%);
+        }
+        
+        .contrast{
+            filter: contrast(300%);
+        }
+
+        .grayscale{
+            filter: grayscale(100%);
+        }
+
+        .huerotate{
+            filter: hue-rotate(270deg);
+        }
+
+        .invert{
+            filter: invert(100%);
+        }
+
+        .opacity{
+            filter: opacity(40%);
+        }
+
+        .saturate{
+            filter: saturate(6);
+        }
+
+        .sepia{
+            filter: sepia(1);
+        }
+
+        .drop_shadow{
+            filter: drop-shadow(20px 20px 5px blue);
+        }
+    </style>
+</head>
+<body>
+    <img src="https://picsum.photos/id/1015/500/300" alt="Imagem-teste">
+    <img class="blur" src="https://picsum.photos/id/1015/500/300" alt="Imagem-teste">
+    <img class="brightness" src="https://picsum.photos/id/1015/500/300" alt="Imagem-teste">
+    <img class="contrast" src="https://picsum.photos/id/1015/500/300" alt="Imagem-teste">
+    <img class="grayscale" src="https://picsum.photos/id/1015/500/300" alt="Imagem-teste">
+    <img class="huerotate" src="https://picsum.photos/id/1015/500/300" alt="Imagem-teste">
+    <img class="invert" src="https://picsum.photos/id/1015/500/300" alt="Imagem-teste">
+    <img class="opacity" src="https://picsum.photos/id/1015/500/300" alt="Imagem-teste">
+    <img class="saturate" src="https://picsum.photos/id/1015/500/300" alt="Imagem-teste">
+    <img class="sepia" src="https://picsum.photos/id/1015/500/300" alt="Imagem-teste">
+    <img class="drop_shadow" src="https://picsum.photos/id/1015/500/300" alt="Imagem-teste">
+</body>
+</html>
