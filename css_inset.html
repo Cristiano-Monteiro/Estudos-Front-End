@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Inset</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container{
+            background-color: rgba(0, 40, 255, .2);
+            height: 100vh;
+            position: relative;
+        }
+
+        .contents{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            background-color: rgba(0, 40, 255, 1);
+            position: absolute;
+            inset: 200px; /* or "inset: 200px 200px 200px 200px" */
+        }
+
+        .action_button{
+            border: 1px solid black;
+            border-radius: 20px;
+            background-color: #f00;
+            padding: 20px;
+            cursor: pointer;
+        }
+
+        .full_screen_on{
+            inset: 0; /* or "inset: 0 0 0 0" */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="contents">
+            <p class="action_button" onclick="action_button_on()">
+                CSS Inset
+            </p>
+        </div>
+    </div>
+    <script>
+        let contents = document.querySelector('.contents');
+        let action_button = document.querySelector('.action_button');
+        function action_button_on(){
+            let there_is_class = contents.classList.contains('full_screen_on');
+            if(there_is_class){
+                contents.classList.remove('full_screen_on');
+                action_button.style.backgroundColor = '#f00';
+            }
+            else{
+                contents.classList.add('full_screen_on');
+                action_button.style.backgroundColor = '#0f0';
+            };
+        };
+    </script>
+</body>
+</html>
