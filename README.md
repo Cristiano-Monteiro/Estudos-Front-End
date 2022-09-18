@@ -10,3 +10,5 @@
 - ::-webkit-scrollbar: https://developer.mozilla.org/pt-BR/docs/Web/CSS/::-webkit-scrollbar
 - scroll-behavior: https://www.w3schools.com/cssref/pr_scroll-behavior.asp
 - https://developer.mozilla.org/pt-BR/docs/Web/CSS/scroll-behavior
+- CSS filter Property: https://www.w3schools.com/cssref/css3_pr_filter.asp
+- CSS Inset: https://developer.mozilla.org/en-US/docs/Web/CSS/inset
