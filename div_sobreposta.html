@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Div Sobreposta</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        .action_button{
+            border: 1px solid black;
+            border-radius: 20px;
+            padding: 5rem;
+            background-color: #00f;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .container{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: fixed;
+            background-color: rgba(0, 0, 0, 0.7);
+            inset: 0;
+        }
+
+        .div_sobreposta{
+            border: 1px solid black;
+            padding: 13rem;
+            border-radius: 20px;
+            background-color: #f00;
+            font-weight: bold;
+            position: absolute;
+            cursor: pointer;
+        }
+
+        .display_none{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="action_button" onclick="activated_button()">
+        <div>
+            <p>Button</p>
+        </div>
+    </div>
+    <div class="container display_none">
+        <div class="div_sobreposta" onclick="turn_back()">
+            <p>Div Sobreposta</p>
+        </div>
+    </div>
+    <script>
+        let action_button = document.querySelector('.action_button');
+        let container = document.querySelector('.container');
+        function activated_button(){
+            container.classList.remove('display_none');
+        };
+
+        function turn_back(){
+            container.classList.add('display_none');
+        };
+    </script>
+</body>
+</html>
