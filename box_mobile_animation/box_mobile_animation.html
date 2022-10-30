@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Animation</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+
+        body{
+            height: 100vh;
+            width: 100vw;
+            gap: 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        body .container{
+            border: 4px solid #f00;
+            height: 100vh;
+            width: 100vw;
+            background-color: blue;
+            
+            position: absolute;
+            top: -95vh;
+            animation-name: showBox;
+            animation-duration: .45s;
+            animation-fill-mode: forwards;
+        }
+
+        body .bttn{
+            width: 100px;
+            height: 100px;
+            position: absolute;
+        }
+
+        @keyframes showBox{
+            0%{top: -95vh;}
+            100%{top: 0vh;}
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    </div>
+    <button class="bttn" onclick="bttn_on()">BTTN</button>
+    <script src="./box_mobile_animation.js"></script>
+</body>
+</html>
