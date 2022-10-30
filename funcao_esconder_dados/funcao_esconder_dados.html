@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste - Esconder dados</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            font-family: sans-serif;
+        }
+
+        body div{
+            width: 100%;
+            max-width: 13rem;
+            height: 13rem;
+            border: 2px solid black;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+        }
+
+        body .bttn{
+            width: 5rem;
+            height: 5rem;
+        }
+
+        body .bttn:hover{
+            cursor: pointer;
+            background-color: gray;
+        }
+
+        body div span{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: .5rem;
+        }
+
+        body div span .valor_bruto{
+            overflow: hidden;
+            border-radius: 10px;
+            transition: all .3s;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <span>R$ <span class="valor_bruto">00.000</span></span>
+    </div>
+    <div class="bttn" onclick="esconder_dados()">
+        <span>bttn</span>
+    </div>
+    <script src="./funcao_esconder_dados.js"></script>
+</body>
+</html>
