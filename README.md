@@ -1,5 +1,5 @@
-# Praticando-CSS
-- Repositório onde pratico algumas ideias de css, que servem como estudo pessoal.
+# Testes_para_estudos
+- Repositório onde pratico algumas ideias, que servem como estudo pessoal.
 
 ## Conteúdos importantes/úteis para estudo:
 - overflow: https://www.w3schools.com/cssref/pr_pos_overflow.asp
