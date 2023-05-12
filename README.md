@@ -1,4 +1,4 @@
-# Testes_para_estudos
+# Estudos-Front-End
 - Repositório onde pratico algumas ideias, que servem como estudo pessoal.
 
 ## Conteúdos importantes/úteis para estudo:
