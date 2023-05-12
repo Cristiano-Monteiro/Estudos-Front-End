@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 1.6rem;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #0B0F99;
+}
+
+figure{
+    width: 100%;
+    max-width: 28rem;
+}
+
+figure img{
+    width: 100%;
+    animation: shadowAnimation 1.2s ease-in-out infinite alternate;
+}
+
+@keyframes shadowAnimation {
+    0%{
+        filter: drop-shadow(0 0 0rem #0000ff) opacity(.8);
+    }
+    100%{
+        filter: drop-shadow(0 0 1.3rem #0000ff);
+    }
+}
