@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DataTable-JS</title>
+  <link rel="stylesheet" href="./DataTable.css">
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+  <div class="containerDataTable">
+    <div class="searchDataTable">
+      <input
+        class="searchInput"
+        type="text" 
+        name="dataTableSearch" 
+        id="dataTableSearch"
+        placeholder="Digite aqui"
+      >
+      <button 
+        class="clearBttn"
+        type="button"
+      >
+        <i data-lucide="eraser"></i>
+      </button>
+      <button 
+        class="searchBttn"
+        type="button"
+      >
+        <i data-lucide="search"></i>
+      </button>
+    </div>
+    <table class="dataTable" id="dataTable">
+      <thead class="dtHead"></thead>
+      <tbody class="dtBody"></tbody>
+    </table>
+    <div class="dataTableBttns">
+      <button
+        class="allResultsBttn" 
+        type="button"
+      >
+        Mostrar todos (X)
+      </button>
+    </div>
+
+    <div class="containerModalDataTable">
+      <button class="closeModalBttn" type="button">
+        <i data-lucide="x"></i>
+      </button>
+      <table class="modalDataTable">
+        <tbody class="tbodyModal">
+          <tr>
+            <td>Strain</td>
+            <td>C1074P</td>
+          </tr>
+          <tr>
+            <td>Chromossome</td>
+            <td>chr1a</td>
+          </tr>
+          <tr>
+            <td>Software</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Function</td>
+            <td>gene</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+
+
+  <script src="./DataTable.js"></script>
+  <script>
+    lucide.createIcons();
+  </script>
+</body>
+</html>
