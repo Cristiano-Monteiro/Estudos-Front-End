@@ -1,3 +1,4 @@
+const containerModalDataTable = document.querySelector('.containerModalDataTable');
 
 const allResultsBttn = document.querySelector('.allResultsBttn');
 
@@ -37,6 +38,24 @@ let dataTableRows = [
     FUNCTION: 'gene',
     ID: 'TgrandC1074PG00000005314',
     DESCRIPTION: 'LRR receptor-like serine/threonine-protein kinase RCH1',
+    completeData: [
+      {
+        title: 'Strain',
+        value: 'C1074P',
+      },
+      {
+        title: 'Chromossome',
+        value: 'chr1a',
+      },
+      {
+        title: 'Software',
+        value: '-',
+      },
+      {
+        title: 'Function',
+        value: 'gene',
+      },
+    ],
   },
   {
     STRAIN: 'C1074P',
@@ -44,6 +63,24 @@ let dataTableRows = [
     FUNCTION: 'mRNA',
     ID: 'TgrandC1074PG00000005314.1',
     DESCRIPTION: 'LRR receptor-like serine/threonine-protein kinase RCH1',
+    completeData: [
+      {
+        title: 'Strain',
+        value: 'CCCC',
+      },
+      {
+        title: 'Chromossome',
+        value: 'cccccc',
+      },
+      {
+        title: 'Software',
+        value: '---------',
+      },
+      {
+        title: 'Function',
+        value: 'geneeeeee',
+      },
+    ],
   },
   {
     STRAIN: 'C1074P',
@@ -51,6 +88,24 @@ let dataTableRows = [
     FUNCTION: 'gene',
     ID: 'TgrandC1074PG00000018752',
     DESCRIPTION: 'LRR receptor-like serine/threonine-protein kinase RCH1',
+    completeData: [
+      {
+        title: 'Strain',
+        value: 'C1074Pfffffff',
+      },
+      {
+        title: 'Chromossome',
+        value: 'chr1aaaaaaaaa',
+      },
+      {
+        title: 'Software',
+        value: '-ffff',
+      },
+      {
+        title: 'Function',
+        value: 'geneaaaaaaa',
+      },
+    ],
   },
   {
     STRAIN: 'C1074P',
@@ -58,6 +113,24 @@ let dataTableRows = [
     FUNCTION: 'mRNA',
     ID: 'TgrandC1074PG00000018752.1',
     DESCRIPTION: 'LRR receptor-like serine/threonine-protein kinase RCH1',
+    completeData: [
+      {
+        title: 'Strain',
+        value: 'C1074P',
+      },
+      {
+        title: 'Chromossome',
+        value: 'chr1a',
+      },
+      {
+        title: 'Software',
+        value: '-',
+      },
+      {
+        title: 'Function',
+        value: 'gene',
+      },
+    ],
   },
   {
     STRAIN: 'C1074P',
@@ -65,461 +138,24 @@ let dataTableRows = [
     FUNCTION: 'gene',
     ID: 'TgrandC1074PG00000036246',
     DESCRIPTION: 'Putative E3 ubiquitin-protein ligase MARCH10',
-  },
-  {
-    STRAIN: 'C1074P',
-    CHROMOSSOME: 'chr1a',
-    FUNCTION: 'gene',
-    ID: 'TgrandC1074PG00000005314',
-    DESCRIPTION: 'LRR receptor-like serine/threonine-protein kinase RCH1',
-  },
-  {
-    STRAIN: 'C1074P',
-    CHROMOSSOME: 'chr1a',
-    FUNCTION: 'mRNA',
-    ID: 'TgrandC1074PG00000005314.1',
-    DESCRIPTION: 'LRR receptor-like serine/threonine-protein kinase RCH1',
-  },
-  {
-    STRAIN: 'TESTE1',
-    CHROMOSSOME: 'chr1b',
-    FUNCTION: 'gene',
-    ID: 'TgrandC1074PG00000018752',
-    DESCRIPTION: 'LRR receptor-like serine/threonine-protein kinase RCH1',
-  },
-  {
-    STRAIN: 'C1074P',
-    CHROMOSSOME: 'chr1b',
-    FUNCTION: 'mRNA',
-    ID: 'TgrandC1074PG00000018752.1',
-    DESCRIPTION: 'LRR receptor-like serine/threonine-protein kinase RCH1',
-  },
-  {
-    STRAIN: 'C1074P',
-    CHROMOSSOME: 'chr3a',
-    FUNCTION: 'gene',
-    ID: 'TgrandC1074PG00000036246',
-    DESCRIPTION: 'Putative E3 ubiquitin-protein ligase MARCH10',
-  },
-  {
-    STRAIN: 'C1074P',
-    CHROMOSSOME: 'chr1a',
-    FUNCTION: 'TESTE2',
-    ID: 'TgrandC1074PG00000005314',
-    DESCRIPTION: 'LRR receptor-like serine/threonine-protein kinase RCH1',
-  },
-  {
-    STRAIN: 'C1074P',
-    CHROMOSSOME: 'chr1a',
-    FUNCTION: 'mRNA',
-    ID: 'TgrandC1074PG00000005314.1',
-    DESCRIPTION: 'LRR receptor-like serine/threonine-protein kinase RCH1',
-  },
-  {
-    STRAIN: 'C1074P',
-    CHROMOSSOME: 'chr1b',
-    FUNCTION: 'gene',
-    ID: 'TgrandC1074PG00000018752',
-    DESCRIPTION: 'LRR receptor-like serine/threonine-protein kinase RCH1',
-  },
-  {
-    STRAIN: 'C1074P',
-    CHROMOSSOME: 'chr1b',
-    FUNCTION: 'mRNA',
-    ID: 'TgrandC1074PG00000018752.1',
-    DESCRIPTION: 'LRR receptor-like serine/threonine-protein kinase RCH1',
-  },
-  {
-    STRAIN: 'C1074P',
-    CHROMOSSOME: 'chr3a',
-    FUNCTION: 'gene',
-    ID: 'TgrandC1074PG00000036246',
-    DESCRIPTION: 'Putative E3 ubiquitin-protein ligase MARCH10',
-  },
-  {
-    STRAIN: 'C1074P',
-    CHROMOSSOME: 'chr1a',
-    FUNCTION: 'gene',
-    ID: 'TgrandC1074PG00000005314',
-    DESCRIPTION: 'LRR receptor-like serine/threonine-protein kinase RCH1',
-  },
-  {
-    STRAIN: 'C1074P',
-    CHROMOSSOME: 'chr1a',
-    FUNCTION: 'mRNA',
-    ID: 'TgrandC1074PG00000005314.1',
-    DESCRIPTION: 'LRR receptor-like serine/threonine-protein kinase RCH1',
-  },
-  {
-    STRAIN: 'C1074P',
-    CHROMOSSOME: 'chr1b',
-    FUNCTION: 'gene',
-    ID: 'TgrandC1074PG00000018752',
-    DESCRIPTION: 'LRR receptor-like serine/threonine-protein kinase RCH1',
-  },
-  {
-    STRAIN: 'C1074P',
-    CHROMOSSOME: 'chr1b',
-    FUNCTION: 'mRNA',
-    ID: 'TgrandC1074PG00000018752.1',
-    DESCRIPTION: 'LRR receptor-like serine/threonine-protein kinase RCH1',
-  },
-  {
-    STRAIN: 'C1074P',
-    CHROMOSSOME: 'chr3a',
-    FUNCTION: 'gene',
-    ID: 'TgrandC1074PG00000036246',
-    DESCRIPTION: 'Putative E3 ubiquitin-protein ligase MARCH10',
-  },
-  {
-    STRAIN: 'C1074P',
-    CHROMOSSOME: 'chr1a',
-    FUNCTION: 'gene',
-    ID: 'TgrandC1074PG00000005314',
-    DESCRIPTION: 'LRR receptor-like serine/threonine-protein kinase RCH1',
-  },
-  {
-    STRAIN: 'C1074P',
-    CHROMOSSOME: 'chr1a',
-    FUNCTION: 'mRNA',
-    ID: 'TgrandC1074PG00000005314.1',
-    DESCRIPTION: 'LRR receptor-like serine/threonine-protein kinase RCH1',
-  },
-  {
-    STRAIN: 'C1074P',
-    CHROMOSSOME: 'chr1b',
-    FUNCTION: 'gene',
-    ID: 'TgrandC1074PG00000018752',
-    DESCRIPTION: 'LRR receptor-like serine/threonine-protein kinase RCH1',
-  },
-  {
-    STRAIN: 'C1074P',
-    CHROMOSSOME: 'chr1b',
-    FUNCTION: 'mRNA',
-    ID: 'TgrandC1074PG00000018752.1',
-    DESCRIPTION: 'LRR receptor-like serine/threonine-protein kinase RCH1',
-  },
-  {
-    STRAIN: 'C1074P',
-    CHROMOSSOME: 'chr3a',
-    FUNCTION: 'gene',
-    ID: 'TgrandC1074PG00000036246',
-    DESCRIPTION: 'Putative E3 ubiquitin-protein ligase MARCH10',
-  },
-  {
-    STRAIN: 'C1074P',
-    CHROMOSSOME: 'chr1a',
-    FUNCTION: 'gene',
-    ID: 'TgrandC1074PG00000005314',
-    DESCRIPTION: 'LRR receptor-like serine/threonine-protein kinase RCH1',
-  },
-  {
-    STRAIN: 'C1074P',
-    CHROMOSSOME: 'chr1a',
-    FUNCTION: 'mRNA',
-    ID: 'TgrandC1074PG00000005314.1',
-    DESCRIPTION: 'LRR receptor-like serine/threonine-protein kinase RCH1',
-  },
-  {
-    STRAIN: 'C1074P',
-    CHROMOSSOME: 'chr1b',
-    FUNCTION: 'gene',
-    ID: 'TgrandC1074PG00000018752',
-    DESCRIPTION: 'LRR receptor-like serine/threonine-protein kinase RCH1',
-  },
-  {
-    STRAIN: 'C1074P',
-    CHROMOSSOME: 'chr1b',
-    FUNCTION: 'mRNA',
-    ID: 'TgrandC1074PG00000018752.1',
-    DESCRIPTION: 'LRR receptor-like serine/threonine-protein kinase RCH1',
-  },
-  {
-    STRAIN: 'C1074P',
-    CHROMOSSOME: 'chr3a',
-    FUNCTION: 'gene',
-    ID: 'TgrandC1074PG00000036246',
-    DESCRIPTION: 'Putative E3 ubiquitin-protein ligase MARCH10',
-  },
-  {
-    STRAIN: 'C1074P',
-    CHROMOSSOME: 'chr1a',
-    FUNCTION: 'gene',
-    ID: 'TgrandC1074PG00000005314',
-    DESCRIPTION: 'LRR receptor-like serine/threonine-protein kinase RCH1',
-  },
-  {
-    STRAIN: 'C1074P',
-    CHROMOSSOME: 'chr1a',
-    FUNCTION: 'mRNA',
-    ID: 'TgrandC1074PG00000005314.1',
-    DESCRIPTION: 'LRR receptor-like serine/threonine-protein kinase RCH1',
-  },
-  {
-    STRAIN: 'C1074P',
-    CHROMOSSOME: 'chr1b',
-    FUNCTION: 'gene',
-    ID: 'TgrandC1074PG00000018752',
-    DESCRIPTION: 'LRR receptor-like serine/threonine-protein kinase RCH1',
-  },
-  {
-    STRAIN: 'C1074P',
-    CHROMOSSOME: 'chr1b',
-    FUNCTION: 'mRNA',
-    ID: 'TgrandC1074PG00000018752.1',
-    DESCRIPTION: 'LRR receptor-like serine/threonine-protein kinase RCH1',
-  },
-  {
-    STRAIN: 'C1074P',
-    CHROMOSSOME: 'chr3a',
-    FUNCTION: 'gene',
-    ID: 'TgrandC1074PG00000036246',
-    DESCRIPTION: 'Putative E3 ubiquitin-protein ligase MARCH10',
-  },
-  {
-    STRAIN: 'C1074P',
-    CHROMOSSOME: 'chr1a',
-    FUNCTION: 'gene',
-    ID: 'TgrandC1074PG00000005314',
-    DESCRIPTION: 'LRR receptor-like serine/threonine-protein kinase RCH1',
-  },
-  {
-    STRAIN: 'C1074P',
-    CHROMOSSOME: 'chr1a',
-    FUNCTION: 'mRNA',
-    ID: 'TgrandC1074PG00000005314.1',
-    DESCRIPTION: 'LRR receptor-like serine/threonine-protein kinase RCH1',
-  },
-  {
-    STRAIN: 'C1074P',
-    CHROMOSSOME: 'chr1b',
-    FUNCTION: 'gene',
-    ID: 'TgrandC1074PG00000018752',
-    DESCRIPTION: 'LRR receptor-like serine/threonine-protein kinase RCH1',
-  },
-  {
-    STRAIN: 'C1074P',
-    CHROMOSSOME: 'chr1b',
-    FUNCTION: 'mRNA',
-    ID: 'TgrandC1074PG00000018752.1',
-    DESCRIPTION: 'LRR receptor-like serine/threonine-protein kinase RCH1',
-  },
-  {
-    STRAIN: 'C1074P',
-    CHROMOSSOME: 'chr3a',
-    FUNCTION: 'gene',
-    ID: 'TgrandC1074PG00000036246',
-    DESCRIPTION: 'Putative E3 ubiquitin-protein ligase MARCH10',
-  },
-  {
-    STRAIN: 'C1074P',
-    CHROMOSSOME: 'chr1a',
-    FUNCTION: 'gene',
-    ID: 'TgrandC1074PG00000005314',
-    DESCRIPTION: 'LRR receptor-like serine/threonine-protein kinase RCH1',
-  },
-  {
-    STRAIN: 'C1074P',
-    CHROMOSSOME: 'chr1a',
-    FUNCTION: 'mRNA',
-    ID: 'TgrandC1074PG00000005314.1',
-    DESCRIPTION: 'LRR receptor-like serine/threonine-protein kinase RCH1',
-  },
-  {
-    STRAIN: 'C1074P',
-    CHROMOSSOME: 'chr1b',
-    FUNCTION: 'gene',
-    ID: 'TgrandC1074PG00000018752',
-    DESCRIPTION: 'LRR receptor-like serine/threonine-protein kinase RCH1',
-  },
-  {
-    STRAIN: 'C1074P',
-    CHROMOSSOME: 'chr1b',
-    FUNCTION: 'mRNA',
-    ID: 'TgrandC1074PG00000018752.1',
-    DESCRIPTION: 'LRR receptor-like serine/threonine-protein kinase RCH1',
-  },
-  {
-    STRAIN: 'C1074P',
-    CHROMOSSOME: 'chr3a',
-    FUNCTION: 'gene',
-    ID: 'TgrandC1074PG00000036246',
-    DESCRIPTION: 'Putative E3 ubiquitin-protein ligase MARCH10',
-  },
-  {
-    STRAIN: 'C1074P',
-    CHROMOSSOME: 'chr1a',
-    FUNCTION: 'gene',
-    ID: 'TgrandC1074PG00000005314',
-    DESCRIPTION: 'LRR receptor-like serine/threonine-protein kinase RCH1',
-  },
-  {
-    STRAIN: 'C1074P',
-    CHROMOSSOME: 'chr1a',
-    FUNCTION: 'mRNA',
-    ID: 'TgrandC1074PG00000005314.1',
-    DESCRIPTION: 'LRR receptor-like serine/threonine-protein kinase RCH1',
-  },
-  {
-    STRAIN: 'C1074P',
-    CHROMOSSOME: 'chr1b',
-    FUNCTION: 'gene',
-    ID: 'TgrandC1074PG00000018752',
-    DESCRIPTION: 'LRR receptor-like serine/threonine-protein kinase RCH1',
-  },
-  {
-    STRAIN: 'C1074P',
-    CHROMOSSOME: 'chr1b',
-    FUNCTION: 'mRNA',
-    ID: 'TgrandC1074PG00000018752.1',
-    DESCRIPTION: 'LRR receptor-like serine/threonine-protein kinase RCH1',
-  },
-  {
-    STRAIN: 'C1074P',
-    CHROMOSSOME: 'chr3a',
-    FUNCTION: 'gene',
-    ID: 'TgrandC1074PG00000036246',
-    DESCRIPTION: 'Putative E3 ubiquitin-protein ligase MARCH10',
-  },
-  {
-    STRAIN: 'C1074P',
-    CHROMOSSOME: 'chr1a',
-    FUNCTION: 'gene',
-    ID: 'TgrandC1074PG00000005314',
-    DESCRIPTION: 'LRR receptor-like serine/threonine-protein kinase RCH1',
-  },
-  {
-    STRAIN: 'C1074P',
-    CHROMOSSOME: 'chr1a',
-    FUNCTION: 'mRNA',
-    ID: 'TgrandC1074PG00000005314.1',
-    DESCRIPTION: 'LRR receptor-like serine/threonine-protein kinase RCH1',
-  },
-  {
-    STRAIN: 'C1074P',
-    CHROMOSSOME: 'chr1b',
-    FUNCTION: 'gene',
-    ID: 'TgrandC1074PG00000018752',
-    DESCRIPTION: 'LRR receptor-like serine/threonine-protein kinase RCH1',
-  },
-  {
-    STRAIN: 'C1074P',
-    CHROMOSSOME: 'chr1b',
-    FUNCTION: 'mRNA',
-    ID: 'TgrandC1074PG00000018752.1',
-    DESCRIPTION: 'LRR receptor-like serine/threonine-protein kinase RCH1',
-  },
-  {
-    STRAIN: 'C1074P',
-    CHROMOSSOME: 'chr3a',
-    FUNCTION: 'gene',
-    ID: 'TgrandC1074PG00000036246',
-    DESCRIPTION: 'Putative E3 ubiquitin-protein ligase MARCH10',
-  },
-  {
-    STRAIN: 'C1074P',
-    CHROMOSSOME: 'chr1a',
-    FUNCTION: 'gene',
-    ID: 'TgrandC1074PG00000005314',
-    DESCRIPTION: 'LRR receptor-like serine/threonine-protein kinase RCH1',
-  },
-  {
-    STRAIN: 'C1074P',
-    CHROMOSSOME: 'chr1a',
-    FUNCTION: 'mRNA',
-    ID: 'TgrandC1074PG00000005314.1',
-    DESCRIPTION: 'LRR receptor-like serine/threonine-protein kinase RCH1',
-  },
-  {
-    STRAIN: 'C1074P',
-    CHROMOSSOME: 'chr1b',
-    FUNCTION: 'gene',
-    ID: 'TgrandC1074PG00000018752',
-    DESCRIPTION: 'LRR receptor-like serine/threonine-protein kinase RCH1',
-  },
-  {
-    STRAIN: 'C1074P',
-    CHROMOSSOME: 'chr1b',
-    FUNCTION: 'mRNA',
-    ID: 'TgrandC1074PG00000018752.1',
-    DESCRIPTION: 'LRR receptor-like serine/threonine-protein kinase RCH1',
-  },
-  {
-    STRAIN: 'C1074P',
-    CHROMOSSOME: 'chr3a',
-    FUNCTION: 'gene',
-    ID: 'TgrandC1074PG00000036246',
-    DESCRIPTION: 'Putative E3 ubiquitin-protein ligase MARCH10',
-  },
-  {
-    STRAIN: 'C1074P',
-    CHROMOSSOME: 'chr1a',
-    FUNCTION: 'gene',
-    ID: 'TgrandC1074PG00000005314',
-    DESCRIPTION: 'LRR receptor-like serine/threonine-protein kinase RCH1',
-  },
-  {
-    STRAIN: 'C1074P',
-    CHROMOSSOME: 'chr1a',
-    FUNCTION: 'mRNA',
-    ID: 'TgrandC1074PG00000005314.1',
-    DESCRIPTION: 'LRR receptor-like serine/threonine-protein kinase RCH1',
-  },
-  {
-    STRAIN: 'C1074P',
-    CHROMOSSOME: 'chr1b',
-    FUNCTION: 'gene',
-    ID: 'TgrandC1074PG00000018752',
-    DESCRIPTION: 'LRR receptor-like serine/threonine-protein kinase RCH1',
-  },
-  {
-    STRAIN: 'C1074P',
-    CHROMOSSOME: 'chr1b',
-    FUNCTION: 'mRNA',
-    ID: 'TgrandC1074PG00000018752.1',
-    DESCRIPTION: 'LRR receptor-like serine/threonine-protein kinase RCH1',
-  },
-  {
-    STRAIN: 'C1074P',
-    CHROMOSSOME: 'chr3a',
-    FUNCTION: 'gene',
-    ID: 'TgrandC1074PG00000036246',
-    DESCRIPTION: 'Putative E3 ubiquitin-protein ligase MARCH10',
-  },
-  {
-    STRAIN: 'C1074P',
-    CHROMOSSOME: 'chr1a',
-    FUNCTION: 'gene',
-    ID: 'TgrandC1074PG00000005314',
-    DESCRIPTION: 'LRR receptor-like serine/threonine-protein kinase RCH1',
-  },
-  {
-    STRAIN: 'C1074P',
-    CHROMOSSOME: 'chr1a',
-    FUNCTION: 'mRNA',
-    ID: 'TgrandC1074PG00000005314.1',
-    DESCRIPTION: 'LRR receptor-like serine/threonine-protein kinase RCH1',
-  },
-  {
-    STRAIN: 'C1074P',
-    CHROMOSSOME: 'chr1b',
-    FUNCTION: 'gene',
-    ID: 'TgrandC1074PG00000018752',
-    DESCRIPTION: 'LRR receptor-like serine/threonine-protein kinase RCH1',
-  },
-  {
-    STRAIN: 'C1074P',
-    CHROMOSSOME: 'chr1b',
-    FUNCTION: 'mRNA',
-    ID: 'TgrandC1074PG00000018752.1',
-    DESCRIPTION: 'LRR receptor-like serine/threonine-protein kinase RCH1',
-  },
-  {
-    STRAIN: 'C1074P',
-    CHROMOSSOME: 'chr3a',
-    FUNCTION: 'gene',
-    ID: 'TgrandC1074PG00000036246',
-    DESCRIPTION: 'Putative E3 ubiquitin-protein ligase MARCH10',
+    completeData: [
+      {
+        title: 'Strain',
+        value: 'C1074P',
+      },
+      {
+        title: 'Chromossome',
+        value: 'chr1a',
+      },
+      {
+        title: 'Software',
+        value: '-',
+      },
+      {
+        title: 'Function',
+        value: 'gene',
+      },
+    ],
   },
 ];
 
@@ -1019,6 +655,9 @@ const dataTableRowsMAIN = [
 
 function getDataRow(data){
   console.log('[Debug] getDataRow:', data);
+
+  createModalTable(data.completeData);
+  containerModalDataTable.classList.add('showModalTable');
 };
 
 // ORDENA A LISTA DE FORMA CRESCENTE/DECRESCENTE
@@ -1145,3 +784,53 @@ clearBttn.addEventListener('click', () => {
     createRows(dataTableCols, dataTableRowsMAIN, 20);
   };
 });
+
+
+
+const closeModalBttn = document.querySelector('.closeModalBttn');
+closeModalBttn.addEventListener('click', () => {
+  containerModalDataTable.classList.remove('showModalTable');
+});
+
+
+// ==================== MODAL TABLE ====================
+const tbodyModal = document.querySelector('.tbodyModal');
+
+/* const modalTabelData = [
+  {
+    title: 'Strain',
+    value: 'C1074P',
+  },
+  {
+    title: 'Chromossome',
+    value: 'chr1a',
+  },
+  {
+    title: 'Software',
+    value: '-',
+  },
+  {
+    title: 'Function',
+    value: 'gene',
+  },
+]; */
+
+function createModalTable(completeData){
+  tbodyModal.innerHTML = '';
+
+  completeData.forEach(data => {
+    let tr = document.createElement('tr');
+
+    let tdTitle = document.createElement('td');
+    tdTitle.classList.add('fontBold');
+    tdTitle.innerText = data.title;
+
+    let tdValue = document.createElement('td');
+    tdValue.innerText = data.value;
+
+    tr.appendChild(tdTitle);
+    tr.appendChild(tdValue);
+
+    tbodyModal.appendChild(tr);
+  });
+};
